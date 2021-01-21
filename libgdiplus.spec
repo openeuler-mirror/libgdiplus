@@ -1,9 +1,9 @@
 %undefine _hardened_build
 Name:                libgdiplus
 Version:             5.6
-Release:             3
+Release:             4
 Summary:             An Open Source implementation of the GDI+ API
-License:             MIT
+License:             MIT and MPL-1.1 and GPL-3.0+
 URL:                 http://www.mono-project.com/Main_Page
 Source0:             http://download.mono-project.com/sources/%{name}/%{name}-%{version}.tar.gz
 Patch1:              libgdiplus-2.10.9-format.patch
@@ -52,5 +52,8 @@ find %{buildroot} -name '*.la' -exec rm -f {} ';'
 %{_libdir}/lib*.so
 
 %changelog
+* Thu Jan 21 2021 Ge Wang <wangge20@huawei.com> - 5.6-4
+- Modify license information.
+
 * Thu Jul 9 2020 leiju <leiju4@huawei.com> - 5.6-3
 - Package init
